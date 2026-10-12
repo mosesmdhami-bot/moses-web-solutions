@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moses Web Solutions | Websites & Digital Services</title>
+
+    <meta
+        name="description"
+        content="Moses Web Solutions provides website development, web design, and digital solutions for individuals and businesses."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Moses Web Solutions</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Moses Web Solutions</h1>
+
+                <p>
+                    We help individuals and businesses build a strong
+                    online presence through modern, responsive websites
+                    and digital solutions.
+                </p>
+
+                <button type="button" id="welcomeButton" class="btn">
+                    Say Hello
+                </button>
+
+                <p id="message" aria-live="polite"></p>
+
+                <a href="#services" class="btn">
+                    Explore Our Services
+                </a>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+
+            <p class="section-intro">
+                Practical digital solutions to help your ideas grow.
+            </p>
+
+            <div class="service-container">
+
+                <article class="service-card">
+                    <h3>Website Development</h3>
+                    <p>
+                        We build responsive websites for businesses,
+                        personal brands, and projects.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Web Design</h3>
+                    <p>
+                        We create clean, attractive website layouts
+                        that work on computers and mobile devices.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Digital Solutions</h3>
+                    <p>
+                        We help clients explore digital tools and
+                        solutions that support their goals.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about">
+            <h2>About Moses Web Solutions</h2>
+
+            <p>
+                Moses Web Solutions is focused on using technology
+                to solve problems and help people establish their
+                presence online.
+            </p>
+
+            <p>
+                Our goal is to create useful, accessible, and
+                professional digital experiences.
+            </p>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+
+            <p>
+                Have a project idea or a question? Send us a message
+                using the form below.
+            </p>
+
+            <form
+                id="contactForm"
+                class="contact-form"
+                action="https://formspree.io/f/xljglyvb"
+                method="POST"
+            >
+
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="email">Your Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="messageInput">Your Message</label>
+                <textarea
+                    id="messageInput"
+                    name="message"
+                    placeholder="Write your message here..."
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+                <p id="formFeedback" aria-live="polite"></p>
+
+            </form>
+
+            <div class="email-contact">
+                <p>You can also contact us directly by email:</p>
+
+                <a
+                    href="mailto:mosesmdhami@gmail.com"
+                    class="btn"
+                >
+                    Email Us
+                </a>
+
+                <p>
+                    <a href="mailto:mosesmdhami@gmail.com">
+                        mosesmdhami@gmail.com
+                    </a>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; <span id="currentYear">2026</span>
+            Moses Web Solutions. All rights reserved.
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
